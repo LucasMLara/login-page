@@ -1,4 +1,3 @@
-
 const express = require('express');
 const { User } = require('../models')
 const { sign } =  require('jsonwebtoken');
