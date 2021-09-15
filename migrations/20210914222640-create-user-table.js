@@ -4,9 +4,7 @@
  * @param {import('sequelize').DataTypes} Sequelize 
  */
 async function up(queryInterface, Sequelize) {
-  await queryInterface.createSchema('sqlnode')
-  await queryInterface.createDatabase('sqlnode')
-  await queryInterface.createTable("users", {
+  await queryInterface.createTable("Users", {
     id: {
       autoIncrement: true,
       primaryKey: true,
@@ -24,7 +22,7 @@ async function up(queryInterface, Sequelize) {
  */
 async function down(queryInterface, Sequelize) {
 
-  await queryInterface.dropTable('users');
+  await queryInterface.dropTable('Users');
   
 }
 
